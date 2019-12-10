@@ -1,0 +1,13 @@
+#!/bin/bash
+
+noMonitor=`xrandr -q | grep -w 'HDMI-1'`
+HDMI_CONNECTED=`xrandr -q | grep -w 'HDMI-1'| awk '{ print $2 }'`
+
+if [[ "$HDMI_CONNECTED" == "connected" ]]; then
+    xrandr --output HDMI-1 --mode 2560x1440 --output eDP-1 --off
+else
+    echo "Activating eDP-1"
+    xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --off
+fi
+
+      

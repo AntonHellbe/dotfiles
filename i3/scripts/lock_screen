@@ -1,0 +1,11 @@
+#!/bin/bash
+noMonitor=`xrandr -q | grep -w 'HDMI-1'`
+HDMI_CONNECTED=`xrandr -q | grep -w 'HDMI-1'| awk '{ print $2 }'`
+
+if [[ "$HDMI_CONNECTED" == "connected" ]]; then
+    i3lock -i ~/Documents/documentation/Linux-Stuff/Backgrounds/background.jpg
+else
+    i3lock -i ~/Documents/documentation/Linux-Stuff/Backgrounds/oil_platform.png
+fi
+
+

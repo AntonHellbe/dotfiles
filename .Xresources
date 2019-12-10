@@ -1,0 +1,19 @@
+
+antialias:  1
+Xft.autohint:   0
+Xft.dpi:        96
+Xft.hinting:    0
+Xft.hintstyle:  hintnone
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+rofi.color-window: #1d1f21, #8c9440, #8c9440
+rofi.color-normal: #1d1f21, #707880, #1d1f21, #1d1f21, #5f819d
+rofi.color-active: #1d1f21, #707880, #1d1f21, #1d1f21, #5f819d
+rofi.color-urgent: #1d1f21, #707880, #1d1f21, #1d1f21, #5f819d
+
+rofi.separator-style: solid
+rofi.font: Hack 12
+rofi.lines: 5
+rofi.width: 25
+rofi.padding: 15
